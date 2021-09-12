@@ -5,8 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
     root: {
         width: '100%',
+        height: '100%',
         margin: '0',
-        padding: '5em 0',
+        padding: '10em 0',
         backgroundImage: `url(${flame})`,
         backgroundColor: '#cccccc',
         backgroundPosition: 'center',
@@ -23,7 +24,7 @@ const useStyles = makeStyles({
     },
     header: {
         margin: '0',
-        color: 'white'
+        color: 'white',
     }
 });
 
