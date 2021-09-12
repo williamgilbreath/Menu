@@ -14,7 +14,7 @@ const HelloWorld = () => {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <Typography>Drinks</Typography>
+                    <Typography>Royal Tea Menu</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -29,13 +29,27 @@ const HelloWorld = () => {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <Typography>Supplements</Typography>
+                    <Typography>Shake Recipes</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
-                    </Typography>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Dorem</li>
+                    </ul>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                >
+                    <Typography>Combos</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <p>Mega Combo</p>
+                    <p>Regular Combo</p>
                 </AccordionDetails>
             </Accordion>
         </div>

@@ -1,6 +1,5 @@
-import './App.css';
-import HelloWorld from './components/Accordion'
-import Header from './components/header'
+import React from 'react';
+import flame from '../images/flame.png'
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -8,10 +7,10 @@ const useStyles = makeStyles({
         width: '100%',
         margin: '0',
         padding: '5em 0',
-        backgroundImage: 'url(`${flame}`)',
+        backgroundImage: `url(${flame})`,
         backgroundColor: '#cccccc',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'noRepeat',
         backgroundSize: 'cover',
         position: 'relative',
         /*background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -22,19 +21,19 @@ const useStyles = makeStyles({
         height: 48,
         padding: '0 30px',*/
     },
-    backgroundImage: {
-        width: '100%',
+    header: {
+        margin: '0',
+        color: 'white'
     }
 });
 
-function App() {
+const Header = () => {
     const classes = useStyles();
-  return (
-    <div className="App">
-        <Header/>
-        <HelloWorld/>
-    </div>
-  );
+    return(
+        <div className={classes.root}>
+            <h1 className={classes.header}>Pheonix Nutrition Menu</h1>
+        </div>
+        )
 }
 
-export default App;
+export default Header
