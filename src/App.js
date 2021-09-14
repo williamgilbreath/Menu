@@ -6,25 +6,22 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles({
     root: {
-        height: '100%'
+        height: '100vh'
     },
     header: {
-        height: '75%'
+        height: '100vh'
     },
-    accordion: {
-        height: '25%'
-    }
 });
 
 function App() {
     const classes = useStyles();
     return (
-        <div className="App" classname={classes.root}>
-            <Grid container direction="column" justifyContent="space-evenly" alignItems="stretch">
-                <Grid item xs className={classes.header}>
+        <div className="App" >
+            <Grid container direction="column" justifyContent="space-evenly" alignItems="stretch" classname={classes.root}>
+                <Grid item xs>
                     <Header/>
                 </Grid>
-                <Grid item xs className={classes.accordion}>
+                <Grid item xs>
                     <HelloWorld/>
                 </Grid>
             </Grid>

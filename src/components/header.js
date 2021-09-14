@@ -1,14 +1,15 @@
 import React from 'react';
-import flame from '../images/flame.png'
+//import flame from '../images/flame.png.icloud'
+import background from '../images/Store.jpg'
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
     root: {
-        width: '100%',
+        width: '100vw',
         height: '100%',
         margin: '0',
         padding: '10em 0',
-        backgroundImage: `url(${flame})`,
+        backgroundImage: `url(${background})`,
         backgroundColor: '#cccccc',
         backgroundPosition: 'center',
         backgroundRepeat: 'noRepeat',
