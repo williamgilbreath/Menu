@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import flame from '../images/flame.png.icloud'
-import logo from '../images/logo.JPG'
+import logo from '../images/Logo.png'
 import juiceIcon from '../images/Juice.png'
 import background from '../images/Store.jpg'
 import { makeStyles } from "@material-ui/core/styles";
@@ -33,7 +33,8 @@ const useStyles = makeStyles({
         borderRadius: '20px',
     },
     icons: {
-        width: '15em'
+        margin: '-30px 0 -20px -10px',
+        width: '17em'
     },
     paperClass: {
         margin: '10px 20px',
