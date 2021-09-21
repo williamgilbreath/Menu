@@ -21,9 +21,6 @@ function App() {
                 <Grid item xs>
                     <Header/>
                 </Grid>
-                <Grid item xs>
-                    <HelloWorld/>
-                </Grid>
             </Grid>
         </div>
   );
